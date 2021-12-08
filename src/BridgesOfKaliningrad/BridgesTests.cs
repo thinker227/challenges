@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BridgesOfKaliningrad {
+namespace BridgesOfKaliningrad;
 
 [TestClass]
 public class BridgesTests
@@ -81,5 +81,4 @@ public class BridgesTests
 		));
 	}
 
-}
 }
