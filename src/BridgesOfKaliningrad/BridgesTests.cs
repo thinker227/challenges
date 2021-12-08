@@ -31,7 +31,7 @@ public class BridgesTests
 			"######\n" +
 			"| ### \n" +
 			"|   | \n" +
-			"##  ##\n"
+			"##  ##"
 		));
 
 		Assert.IsTrue(Bridges.BridgesAreValid(
@@ -39,7 +39,7 @@ public class BridgesTests
 			" ##--##\n" +
 			" |   # \n" +
 			"##   ##\n" +
-			" ###-##\n"
+			" ###-##"
 		));
 
 		Assert.IsTrue(Bridges.BridgesAreValid(
@@ -48,7 +48,7 @@ public class BridgesTests
 			" | | \n" +
 			"##-# \n" +
 			"|  ##\n" +
-			"##  #\n"
+			"##  #"
 		));
 
 		Assert.IsFalse(Bridges.BridgesAreValid(
@@ -67,7 +67,7 @@ public class BridgesTests
 			"#     |     #   ##\n" +
 			"#     |     ##  ##\n" +
 			"##----###      ###\n" +
-			" ##  #######---## \n"
+			" ##  #######---##"
 		));
 
 		Assert.IsFalse(Bridges.BridgesAreValid(
@@ -77,7 +77,28 @@ public class BridgesTests
 			"#     |     #   ##\n" +
 			"#     |     ##--##\n" +
 			"##----###      ###\n" +
-			" ##  #######---## \n"
+			" ##  #######---## "
+		));
+
+		Assert.IsTrue(Bridges.BridgesAreValid(
+			"     ########\n" +
+			"  ###### |  #\n" +
+			"  |      |  |\n" +
+			"######--#####\n" +
+			"  ###     ###\n" +
+			"  |    ##  | \n" +
+			"  ###-#### | \n" +
+			"####   ######\n"
+		));
+
+		Assert.IsTrue(Bridges.BridgesAreValid(
+			"#########   \n" +
+			" |   #######\n" +
+			"###   |    |\n" +
+			" ###########\n" +
+			"    ####### \n" +
+			"      |  |  \n" +
+			"      ##### \n"
 		));
 	}
 
